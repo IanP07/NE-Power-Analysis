@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NE Power Analysis | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav id="navbar">
+        <img id="navbar-picture" src="/images/NEPSlogo.png" alt="NEPS Site Logo">
+        <ul class="nav-links">
+            <li><a href="index.html" id="about">Home</a></li>
+            <li><a href="services.html" id="services">Services</a></li>
+            <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+            <li><a href="contact.html" id="contact-us">Contact Us</a></li>
+            <li><a href="javascript:void(0);" class="hamburger-button" onclick="hamburgerDropdown()">
+                <i id="hamburgericon" class="fa fa-bars" style="font-size: 50px;"></i>
+            </a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-navbar">
+        <ul class="hamburger-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="about-us">
+        <img id="about-us-photo" src="images/power-lines-6813813_1920.jpg" alt="NEPA about page stock photo">
+        <h2>We are an electrical engineering consultant firm. The PowerStudies, Inc. team of dedicated engineers, technicians, and support staff have many years of combined experience in commercial, industrial and utility power distribution.</h2>
+
+        <h2>Our extensive background and knowledge allow us to expertly investigate, analyze, and resolve all your power system challenges.</h2>
+
+        <h2>We are exceptionally experienced to give you the very highest quality of work and customer service. Call and ask for references from our long list of very satisfied customers, estimates on the services you need, and more details on PowerStudies outstanding services.</h2>
+    </div>
+    <div id="main-buttons">
+        <a href="contact.html"><div class="contact-us-button"><h3 class="contact-us-text">Contact Us</h3></div></a>
+        <a href="services.html"><div class="contact-us-button"><h3 class="contact-us-text">Learn More</h3></div></a>
+    </div>
+</body>
+<script>
+    function hamburgerDropdown() {
+        const hamburgerNavbar = document.getElementById("hamburger-navbar");
+        hamburgerNavbar.classList.toggle("opened");
+    }
+
+    window.addEventListener("resize", () => {
+        const hamburgerNavbar = document.getElementById("hamburger-navbar");
+        if(window.innerWidth > 700) {
+            hamburgerNavbar.classList.remove("opened");
+        }
+    })
+</script>
+<script>
+    const links = document.querySelectorAll(".nav-links a, .hamburger-nav-links a");
+    const currentPage = location.pathname.split("/").pop(); // gets last part like "about.html"
+
+    links.forEach(link => {
+        const linkPage = link.getAttribute("href");
+        if (linkPage === currentPage) {
+            link.classList.add("active-nav");
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,435 @@
+
+body {
+    background-color: white;
+    /* #F5F5DC */
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.7vw;
+    margin-bottom: 1vw;
+}
+
+h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.7vw;
+}
+
+li > a{
+    font-size: max(1.7vw, 23px);
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: black; 
+    transform: scale(1);
+    display: inline-block;
+    transition: color 0.2s ease-in, transform 0.28s ease-in;
+}
+
+a {
+    text-decoration: none;
+}
+
+li > a:hover {
+    color: #888888;
+    transform: scale(1.2);
+}
+
+
+#navbar {
+    padding-top: 2vw;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6vw;
+}
+
+#hamburger-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none; /* Disables clicking on hamburger dropdown */
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+#hamburger-navbar.opened {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: right;
+    align-self: right;
+    align-items: center;
+    padding-right: 1.8vw;
+    gap: 2vw;
+    list-style-type: none;
+}
+
+.hamburger-nav-links {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 10vw;
+    list-style-type: none;
+}
+
+.hamburger-button {
+    visibility: hidden;
+}
+
+.hamburger-button:hover {
+    color: #888888;
+}
+
+#navbar-picture {
+    width: 43vw; 
+    height: auto;
+}
+
+@media screen and (max-width: 1095px) { 
+    .nav-links {
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 10vw;
+    }
+    .hamburger-button {
+        visibility: visible;
+    }
+    #about {
+        display: none;
+    }
+    #services {
+        display: none;
+    }
+    #portfolio {
+        display: none;
+    }
+    #contact-us {
+        display: none;
+    }
+}
+
+/* ABOUT PAGE */
+#about-us {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7vw;
+    padding-top: 2.5vw;
+    padding-right: 7vw;
+    align-items: center;
+}
+
+
+#about-us-photo {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    margin-bottom: 0.5vw;
+    border-radius: 13px;
+}
+
+#main-buttons {
+    padding-top: 1vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+/* Underlines active page */
+.active-nav {
+    text-decoration: underline;
+    text-underline-offset: 6px; /* optional: space between text and underline */
+}
+
+
+
+/* SERVICES PAGE */
+#services-text {
+    padding-top: 2vw;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+}
+
+
+#services-div {
+    height: auto;
+    width: 100%;
+    padding: 2vw;
+    padding-top: 5vw;
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    justify-self: center;              
+}
+
+
+
+#service1 {
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    color: #1d1d1f;
+    grid-row: 1;
+    background-color: #f5f5f7;
+    height: 35vw;
+    width: 35vw;
+    border-radius: 13px;
+    transform: scale(1);
+    transition: transform 0.3s;
+    align-items: center;
+}
+#service1:hover {
+    transform: scale(1.03);
+}
+#service2 {    
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    color: #1d1d1f;
+    align-items: center;
+    background-color: #f5f5f7;
+    height: 35vw;
+    width: 35vw;
+    border-radius: 13px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in;
+}
+#service2:hover {
+    transform: scale(1.03);
+}
+#service3 {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    color: #1d1d1f;
+    align-items: center;
+    background-color: #f5f5f7;
+    height: 35vw;
+    width: 35vw;
+    border-radius: 13px;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+#service3:hover {
+    transform: scale(1.03);
+}
+#service4 {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    color: #1d1d1f;
+    align-items: center;
+    background-color: #f5f5f7;
+    height: 35vw;
+    width: 35vw;
+    border-radius: 13px;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+#service4:hover {
+    transform: scale(1.03);
+}
+
+.learn-more {
+    margin-top: auto; /* Pushes card to bottom*/
+    margin-bottom: 1vw;
+    display: flex;
+    background-color: #b4382a;
+    border-radius: 900px;
+    height: 5vw;
+    width: 13vw;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+@media (max-width: 800px) {
+    #services-div {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    #services-div > a > div {
+        height: 60vw;
+        width: 60vw;
+        align-items: center;
+        margin: 0 auto;
+    }
+    #services-div > a > div > h1 {
+        font-size: 4vw;
+    }
+    #services-div > a > div > h2 { 
+        font-size: 3vw;
+    }
+
+    .learn-more {
+        height: 7.69vw;
+        width: 20vw;
+    }
+    #about-us {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    #about-us-photo {
+        margin-top: 10vw;
+    }
+    #about-us > h2 {
+        font-size: 3.3vw;
+    }
+    #hamburger-icon {
+        font-size: 25px;
+    }
+}
+
+
+/* PORTFOLIO PAGE */
+
+#portfolio-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 2vw;
+    font-size: 26px;
+}
+
+#portfolio-list {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding-top: 1vw;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.7vw;
+}
+
+#portfolio-list > li {
+    margin: 2vw;
+    font-size: 30px;
+}
+
+#portfolio-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact-us-button {
+    margin-bottom: 1vw;
+    display: flex;
+    background-color: #b4382a;
+    border-radius: 900px;
+    height: 50px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.contact-us-button:hover {
+    transform: scale(1.03);
+}
+
+
+
+/* CONTACT US  PAGE */
+#contact-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 2vw;
+    font-size: 26px;
+}
+
+.contact-us-text {
+    font-size: 15px !important;
+}
+
+#contact-body {
+    justify-self: center;
+    padding-top: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#contact-body > #form-body > #contact-form > div {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+}
+
+label { 
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+input[type=submit] {
+    background-color: #b4382a;
+    border-radius: 200px;
+    height: 50px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-width: 0px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.3;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+input[type=submit]:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+input[type=text] {
+    padding: 8px;
+    height: 40px;
+    width: 300px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+textarea {
+    padding: 8px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    width: 300px;
+}
+
+#contact-image-div {
+    height: 40vw;
+    width: 25vw;
+    background-color: red;
+}

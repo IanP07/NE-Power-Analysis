@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NE Power Analysis | Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav id="navbar">
+        <img src="/images/NEPSlogo.png" alt="NEPS Site Logo" id="navbar-picture">
+        <ul class="nav-links">
+            <li><a href="index.html" id="about">Home</a></li>
+            <li><a href="services.html" id="services">Services</a></li>
+            <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+            <li><a href="contact.html" id="contact-us">Contact Us</a></li>
+            <li><a href="javascript:void(0);" class="hamburger-button" onclick="hamburgerDropdown()">
+                <i class="fa fa-bars" style="font-size: 50px;"></i>
+            </a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-navbar">
+        <ul class="hamburger-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1 id="services-text">Services</h1>
+    <div id="services-div">
+        <a href="contact.html"><div id="service1">
+            <h1>Protective Device Coordination</h1>
+            <h2>Increase facility reliability, equipment protection, and personnel safety</h2>
+            <div class="learn-more"><h3>Learn More</h3></div>
+        </div></a>
+
+        <a href="contact.html"><div id="service2">
+            <h1>Load Flow / Power Factor Correction</h1>
+            <h2>Aid in future planning and present day operation by demonstrating how the electrical system will perform during normal and emergency operating conditions</h2>
+            <div class="learn-more"><h3>Learn More</h3></div>
+        </div></a>
+
+        <a href="contact.html"><div id="service3">
+            <h1>Ground Grid / Mat Study</h1>
+            <h2>Material cost savings by determining the minimum size of conductors and number of ground rods to keep the potentcial values below the IEEE limits.</h2>
+            <div class="learn-more"><h3>Learn More</h3></div>
+            
+        </div></a>
+
+        <a href="contact.html"><div id="service4">
+            <h1>Generator Sizing and Motor Starting</h1>
+            <h2>Determine the minimum generator size needed to support the facility loads and start the larger motors.</h2>
+            <div class="learn-more"><h3>Learn More</h3></div>
+        </div></a>
+    </div>
+
+</body>
+<script>
+    function hamburgerDropdown() {
+        const hamburgerNavbar = document.getElementById("hamburger-navbar");
+        hamburgerNavbar.classList.toggle("opened");
+    }
+
+    window.addEventListener("resize", () => {
+        const hamburgerNavbar = document.getElementById("hamburger-navbar");
+        if(window.innerWidth > 700) {
+            hamburgerNavbar.classList.remove("opened");
+        }
+    })
+</script>
+<script>
+    const links = document.querySelectorAll(".nav-links a, .hamburger-nav-links a");
+    const currentPage = location.pathname.split("/").pop(); // gets last part like "about.html"
+
+    links.forEach(link => {
+        const linkPage = link.getAttribute("href");
+        if (linkPage === currentPage) {
+            link.classList.add("active-nav");
+        }
+    });
+</script>
+</html>
