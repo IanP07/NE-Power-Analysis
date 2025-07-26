@@ -7,24 +7,24 @@ body {
 h1 {
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 2vw;
+    font-size: 1.7vw;
 }
 
 h2 {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 1.7vw;
+    font-size: 1vw;
     margin-bottom: 1vw;
 }
 
 h3 {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 1.7vw;
+    font-size: 1vw;
 }
 
 li > a{
-    font-size: max(1.7vw, 23px);
+    font-size: max(1vw, 20px);
     font-family: "Inter", sans-serif;
     text-decoration: none;
     color: black; 
@@ -98,7 +98,7 @@ li > a:hover {
 }
 
 #navbar-picture {
-    width: 43vw; 
+    width: max(44vw, 250px); 
     height: auto;
 }
 
@@ -132,7 +132,8 @@ li > a:hover {
     padding-left: 7vw;
     padding-top: 2.5vw;
     padding-right: 7vw;
-    align-items: center;
+    align-self: center;
+    align-items: first baseline;
 }
 
 
@@ -155,6 +156,7 @@ li > a:hover {
 .active-nav {
     text-decoration: underline;
     text-underline-offset: 6px; /* optional: space between text and underline */
+    color: #BA3940;
 }
 
 
@@ -189,8 +191,8 @@ li > a:hover {
     color: #1d1d1f;
     grid-row: 1;
     background-color: #f5f5f7;
-    height: 35vw;
-    width: 35vw;
+    height: 27vw;
+    width: 27vw;
     border-radius: 13px;
     transform: scale(1);
     transition: transform 0.3s;
@@ -206,8 +208,8 @@ li > a:hover {
     color: #1d1d1f;
     align-items: center;
     background-color: #f5f5f7;
-    height: 35vw;
-    width: 35vw;
+    height: 27vw;
+    width: 27vw;
     border-radius: 13px;
     transform: scale(1);
     transition: transform 0.3s ease-in;
@@ -222,8 +224,8 @@ li > a:hover {
     color: #1d1d1f;
     align-items: center;
     background-color: #f5f5f7;
-    height: 35vw;
-    width: 35vw;
+    height: 27vw;
+    width: 27vw;
     border-radius: 13px;
     transform: scale(1);
     transition: transform 0.3s;
@@ -238,8 +240,8 @@ li > a:hover {
     color: #1d1d1f;
     align-items: center;
     background-color: #f5f5f7;
-    height: 35vw;
-    width: 35vw;
+    height: 27vw;
+    width: 27vw;
     border-radius: 13px;
     transform: scale(1);
     transition: transform 0.3s;
@@ -250,12 +252,12 @@ li > a:hover {
 
 .learn-more {
     margin-top: auto; /* Pushes card to bottom*/
-    margin-bottom: 1vw;
+    margin-bottom: 0vw;
     display: flex;
-    background-color: #b4382a;
+    background-color: #BA3940;
     border-radius: 900px;
-    height: 5vw;
-    width: 13vw;
+    height: 3vw;
+    width: 8vw;
     justify-content: center;
     align-items: center;
     color: white;
@@ -297,6 +299,9 @@ li > a:hover {
     #hamburger-icon {
         font-size: 25px;
     }
+    h3 {
+        font-size: 2vw;
+    }
 }
 
 
@@ -334,7 +339,7 @@ li > a:hover {
 .contact-us-button {
     margin-bottom: 1vw;
     display: flex;
-    background-color: #b4382a;
+    background-color: #BA3940;
     border-radius: 900px;
     height: 50px;
     width: 150px;
@@ -360,7 +365,7 @@ li > a:hover {
 }
 
 .contact-us-text {
-    font-size: 15px !important;
+    font-size: 20px !important;
 }
 
 #contact-body {
@@ -392,7 +397,7 @@ label {
 }
 
 input[type=submit] {
-    background-color: #b4382a;
+    background-color:  #BA3940;
     border-radius: 200px;
     height: 50px;
     width: 150px;
@@ -402,7 +407,7 @@ input[type=submit] {
     border-width: 0px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 1.3;
+    font-size: 20px;
     transform: scale(1);
     transition: transform 0.3s;
 }
@@ -426,6 +431,7 @@ textarea {
     font-weight: 400;
     font-size: 20px;
     width: 300px;
+    height: 240px;
 }
 
 #contact-image-div {
