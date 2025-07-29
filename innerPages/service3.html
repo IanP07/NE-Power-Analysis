@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEPA | Protective Device Coordination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav id="navbar">
+        <a href="../index.html"><img src="/images/NEPAlogo.png" alt="NEPA Site Logo" id="navbar-picture"></a>
+        <ul class="nav-links">
+            <li><a href="../index.html" id="about">Home</a></li>
+            <li><a href="../services.html" id="services">Services</a></li>
+            <li><a href="../portfolio.html" id="portfolio">Portfolio</a></li>
+            <li><a href="../contact.html" id="contact-us">Contact Us</a></li>
+            <li><a href="javascript:void(0);" class="hamburger-button" onclick="hamburgerDropdown()">
+                <i class="fa fa-bars" style="font-size: 50px;"></i>
+            </a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-navbar">
+        <ul class="hamburger-nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1 id="services-text">Protective Device Coordination</h1>
+
+    <div id="main-service-content">
+        <div class="service-row">
+            <div class="service-text">
+                <h1>Short Circuit Analysis will determine maximum available fault current levels at all locations in the system. In addition, the report will inform as to whether or not each location is properly rated for the fault current calculated.</h1>
+            </div>
+            <div class="service-image">
+                <img src="../images/temp.jpg" style="width: 100%; height: auto; border-radius: 13px;">
+            </div>
+        </div>
+        
+        <div class="service-row">
+            <div class="service-text">
+                <h1>Short Circuit Analysis will determine maximum available fault current levels at all locations in the system. In addition, the report will inform as to whether or not each location is properly rated for the fault current calculated.</h1>
+            </div>
+            <div class="service-image">
+                <img src="../images/temp.jpg" style="width: 100%; height: auto; border-radius: 13px;">
+            </div>
+        </div>
+        <br></br>
+        <a href="../contact.html"><div class="contact-us-button"><h3 class="contact-us-text">Contact Us</h3></div></a>
+    </div>
+
+</body>
+<script>
+    function hamburgerDropdown() {
+        const hamburgerNavbar = document.getElementById("hamburger-navbar");
+        hamburgerNavbar.classList.toggle("opened");
+    }
+
+    window.addEventListener("resize", () => {
+        const hamburgerNavbar = document.getElementById("hamburger-navbar");
+        if(window.innerWidth > 700) {
+            hamburgerNavbar.classList.remove("opened");
+        }
+    })
+</script>
+
+</html>

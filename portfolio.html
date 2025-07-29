@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav id="navbar">
-        <img src="/images/NEPAlogo.png" alt="NEPA Site Logo" id="navbar-picture">
+        <a href="../index.html"><img src="/images/NEPAlogo.png" alt="NEPA Site Logo" id="navbar-picture"></a>
         <ul class="nav-links">
             <li><a href="index.html" id="about">Home</a></li>
             <li><a href="services.html" id="services">Services</a></li>
@@ -61,11 +61,17 @@
 </script>
 <script>
     const links = document.querySelectorAll(".nav-links a, .hamburger-nav-links a");
-    const currentPage = location.pathname.split("/").pop(); // gets last part like "about.html"
+
+    const currentPage = location.pathname.split("/").pop() || "index";
 
     links.forEach(link => {
-        const linkPage = link.getAttribute("href").replace(/\.html$/, ""); // Removes .html from ending
-        if (linkPage === currentPage) {
+        let linkPage = link.getAttribute("href")
+            ?.replace(/^\.?\//, "")      // remove leading ./ or /
+            .replace(/\.html$/, "");     // remove .html
+
+        let current = currentPage.replace(/\.html$/, ""); // remove .html too for clean match
+
+        if (linkPage === current) {
             link.classList.add("active-nav");
         }
     });

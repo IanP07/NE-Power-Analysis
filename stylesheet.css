@@ -457,3 +457,82 @@ textarea {
     width: 25vw;
     background-color: red;
 }
+
+
+/* INNER SERVICES PAGE */
+
+#main-service-content {
+    background-color: #f5f5f7;
+    border-radius: 13px;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 1vw;
+    display: flex;
+    width: 1200px;
+    justify-self: center;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.service-row {
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    gap: 1vw;
+}
+
+.service-text {
+    width: 50%;
+    height: 100%;
+}
+
+.service-text > h1 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.service-image {
+    width: 50%;
+    height: 100%;
+}
+
+@media (max-width: 1250px) { 
+    #main-service-content {
+        width: 90%;
+    }
+    .service-row {
+        width: 100%;
+        height: px;
+    }
+    .service-image {
+        width: 50%;
+        height: 100%;
+        height: 50vw;
+    }
+
+    .service-text {
+        width: 50%;
+    }
+
+} 
+
+@media (max-width: 800px) { 
+    .service-row {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .service-text {
+        width: 100%;
+        height: 50%;
+    }
+    .service-image {
+        width: 100%;
+        height: 50%;
+        
+    }
+} 
