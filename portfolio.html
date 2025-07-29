@@ -63,7 +63,7 @@
     const links = document.querySelectorAll(".nav-links a, .hamburger-nav-links a");
 
     const currentPage = location.pathname.split("/").pop() || "index";
-
+    console.log(currentPage);
     links.forEach(link => {
         let linkPage = link.getAttribute("href")
             ?.replace(/^\.?\//, "")      // remove leading ./ or /
