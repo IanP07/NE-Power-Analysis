@@ -76,23 +76,14 @@
 <script>
     const links = document.querySelectorAll(".nav-links a, .hamburger-nav-links a");
 
-    const currentPage = location.pathname.split("/").pop() || "index";
-    console.log(currentPage);
-    console.log(links);
+    const rawPath = location.pathname.split("/").pop();
+    const currentPage = rawPath === "" ? "index" : rawPath.replace(/\.html$/, "");
+
     links.forEach(link => {
-        let linkPage = link.getAttribute("href")
-            ?.replace(/^\.?\//, "")      
-            .replace(/\.html$/, "");     
+        let href = link.getAttribute("href") || ""; 
+        let linkPage = href === "" ? "index" : href.replace(/^\.?\//, "").replace(/\.html$/, "");
         
-        if(linkPage = "") {
-            linkPage = "index";
-        }
-        
-        let current = currentPage.replace(/\.html$/, ""); // remove .html too for clean match
-        console.log(linkPage);
-        console.log(current);       
-        if (linkPage === current) {
-            
+        if (linkPage === currentPage) {
             link.classList.add("active-nav");
         }
     });
