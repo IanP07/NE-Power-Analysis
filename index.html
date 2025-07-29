@@ -76,13 +76,17 @@
 <script>
     const links = document.querySelectorAll(".nav-links a, .hamburger-nav-links a");
 
-    const rawPath = location.pathname.split("/").pop();
-    const currentPage = rawPath === "" ? "index" : rawPath.replace(/\.html$/, "");
+    function normalizePath(path) {
+        if (!path || path === "/" || path === "./") return "index";
+        return path.replace(/^\.?\//, "").replace(/\.html$/, "").toLowerCase();
+    }
+
+    const currentPage = normalizePath(location.pathname);
 
     links.forEach(link => {
-        let href = link.getAttribute("href") || ""; 
-        let linkPage = href === "" ? "index" : href.replace(/^\.?\//, "").replace(/\.html$/, "");
-        
+        const linkHref = link.getAttribute("href");
+        const linkPage = normalizePath(linkHref);
+
         if (linkPage === currentPage) {
             link.classList.add("active-nav");
         }
