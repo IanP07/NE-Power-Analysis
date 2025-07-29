@@ -78,6 +78,7 @@
 
     const currentPage = location.pathname.split("/").pop() || "index";
     console.log(currentPage);
+    console.log(links);
     links.forEach(link => {
         let linkPage = link.getAttribute("href")
             ?.replace(/^\.?\//, "")      
