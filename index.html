@@ -83,7 +83,11 @@
         let linkPage = link.getAttribute("href")
             ?.replace(/^\.?\//, "")      
             .replace(/\.html$/, "");     
-
+        
+        if(linkPage = "") {
+            linkPage = "index";
+        }
+        
         let current = currentPage.replace(/\.html$/, ""); // remove .html too for clean match
         console.log(linkPage);
         console.log(current);       
