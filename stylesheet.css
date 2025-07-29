@@ -111,7 +111,7 @@ li > a:hover {
     .hamburger-button {
         visibility: visible;
     }
-    #about {
+    #index {
         display: none;
     }
     #services {
