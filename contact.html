@@ -90,7 +90,7 @@
     const currentPage = location.pathname.split("/").pop(); // gets last part like "about.html"
 
     links.forEach(link => {
-        const linkPage = link.getAttribute("href");
+        const linkPage = link.getAttribute("href").replace(/\.html$/, ""); // Removes .html from ending
         if (linkPage === currentPage) {
             link.classList.add("active-nav");
         }
