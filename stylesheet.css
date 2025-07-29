@@ -166,7 +166,7 @@ li > a:hover {
     padding-top: 2vw;
     display: flex;
     justify-content: center;
-    font-size: 26px;
+    font-size: 33px;
 }
 
 
@@ -265,6 +265,9 @@ li > a:hover {
 
 
 @media (max-width: 800px) {
+    #services-text {
+        font-size: 26px;
+    }
     #services-div {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -274,9 +277,10 @@ li > a:hover {
         width: 80vw;
         align-items: center;
         margin: 0 auto;
+        text-align: center;
     }
     #services-div > a > div > h1 {
-        font-size: 4vw;
+        font-size: 5vw;
     }
     #services-div > a > div > h2 { 
         font-size: 3vw;
@@ -305,6 +309,15 @@ li > a:hover {
     }
 }
 
+
+@media (max-width: 500px) { 
+    .learn-more > h3{
+        font-size: 2.7vw;
+    }
+    #services-div > a > div > h2 { 
+        font-size: 3.4vw;
+    }
+}
 
 /* PORTFOLIO PAGE */
 
