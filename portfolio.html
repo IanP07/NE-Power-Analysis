@@ -72,6 +72,8 @@
         let current = currentPage.replace(/\.html$/, ""); // remove .html too for clean match
 
         if (linkPage === current) {
+            console.log(linkPage);
+            console.log(current);
             link.classList.add("active-nav");
         }
     });
