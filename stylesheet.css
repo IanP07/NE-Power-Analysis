@@ -274,7 +274,7 @@ li > a:hover {
     }
     #services-div > a > div {
         height: 100vw;
-        width: 80vw;
+        width: 85vw;
         align-items: center;
         margin: 0 auto;
         text-align: center;
@@ -312,10 +312,14 @@ li > a:hover {
 
 @media (max-width: 500px) { 
     .learn-more > h3{
-        font-size: 2.7vw;
+        font-size: 3.3vw;
+    }
+    .learn-more {
+        height: 9.6vw;
+        width: 25vw;
     }
     #services-div > a > div > h2 { 
-        font-size: 3.4vw;
+        font-size: 4vw;
     }
 }
 
