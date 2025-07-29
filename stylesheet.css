@@ -270,8 +270,8 @@ li > a:hover {
         justify-items: center;
     }
     #services-div > a > div {
-        height: 60vw;
-        width: 60vw;
+        height: 100vw;
+        width: 80vw;
         align-items: center;
         margin: 0 auto;
     }
@@ -283,6 +283,7 @@ li > a:hover {
     }
 
     .learn-more {
+        margin-bottom: 2vw;
         height: 7.69vw;
         width: 20vw;
     }
