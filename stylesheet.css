@@ -185,6 +185,7 @@ li > a:hover {
 
 /* SERVICES PAGE */
 #services-text {
+    text-align: center;
     padding-top: 2vw;
     display: flex;
     justify-content: center;
