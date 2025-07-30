@@ -129,9 +129,9 @@ li > a:hover {
 #about-us {
     display: flex;
     flex-direction: column;
-    padding-left: 7vw;
+    padding-left: 13vw;
     padding-top: 2.5vw;
-    padding-right: 7vw;
+    padding-right: 13vw;
     align-self: center;
     align-items: first baseline;
 }
@@ -140,12 +140,31 @@ li > a:hover {
     font-size: 25px;
 }
 
+#image-container {
+    display: flex;
+    align-self: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#about-us-text {
+    width: 90%;
+    font-size: 33px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #about-us-photo {
+    filter: brightness(40%);
     max-width: 100%;
-    height: auto;
-    width: auto\9;
+    height: 500px;
+    width: 100%;
     margin-bottom: 0.5vw;
     border-radius: 13px;
+    object-fit: cover;
 }
 
 #main-buttons {
@@ -169,7 +188,7 @@ li > a:hover {
     padding-top: 2vw;
     display: flex;
     justify-content: center;
-    font-size: 26px;
+    font-size: 33px;
 }
 
 
@@ -302,7 +321,7 @@ li > a:hover {
         margin-top: 10vw;
     }
     #about-us > h2 {
-        font-size: 3.3vw;
+        font-size: 20px;
     }
     #hamburger-icon {
         font-size: 25px;
@@ -332,7 +351,7 @@ li > a:hover {
     display: flex;
     justify-content: center;
     padding-top: 2vw;
-    font-size: 26px;
+    font-size: 33px;
 }
 
 #portfolio-list {
@@ -391,7 +410,7 @@ li > a:hover {
     display: flex;
     justify-content: center;
     padding-top: 2vw;
-    font-size: 26px;
+    font-size: 33px;
 }
 
 .contact-us-text {
