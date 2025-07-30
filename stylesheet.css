@@ -136,6 +136,9 @@ li > a:hover {
     align-items: first baseline;
 }
 
+#about-us > h2 {
+    font-size: 25px;
+}
 
 #about-us-photo {
     max-width: 100%;
@@ -166,7 +169,7 @@ li > a:hover {
     padding-top: 2vw;
     display: flex;
     justify-content: center;
-    font-size: 33px;
+    font-size: 26px;
 }
 
 
@@ -353,6 +356,15 @@ li > a:hover {
     align-items: center;
 }
 
+#portfolio-bubble {
+    background-color: #f5f5f7;
+    padding: 10px;
+    border-radius: 13px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
 
 .contact-us-button {
     margin-bottom: 1vw;
@@ -414,6 +426,13 @@ label {
     font-size: 20px;
 }
 
+input {
+    border-radius: 8px;
+    border-color: rgb(180, 174, 174);
+    border-style: solid;
+    border-width: 2px;
+}
+
 input[type=submit] {
     background-color:  #BA3940;
     border-radius: 200px;
@@ -444,6 +463,10 @@ input[type=text] {
 }
 
 textarea {
+    border-radius: 8px;
+    border-color: rgb(180, 174, 174);
+    border-style: solid;
+    border-width: 2px;
     padding: 8px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -543,6 +566,10 @@ textarea {
     }
     #main-service-row > a > div {
         margin-bottom: 1vw;
+    }
+    #portfolio-list > li {
+        font-size: 20px;
+        margin: 4vw;
     }
 } 
 
