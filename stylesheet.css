@@ -541,5 +541,8 @@ textarea {
         height: 50%;
         
     }
+    #main-service-row > a > div {
+        margin-bottom: 1vw;
+    }
 } 
 
