@@ -499,6 +499,12 @@ textarea {
     height: 100%;
 }
 
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 1250px) { 
     #main-service-content {
         width: 90%;
@@ -536,3 +542,4 @@ textarea {
         
     }
 } 
+
