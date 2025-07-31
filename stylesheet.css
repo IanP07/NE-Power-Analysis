@@ -158,7 +158,7 @@ li > a:hover {
 }
 
 #about-us-photo {
-    filter: brightness(100%);
+    filter: brightness(70%);
     max-width: 100%;
     height: 500px;
     width: 100%;
