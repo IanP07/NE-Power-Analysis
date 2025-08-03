@@ -536,6 +536,7 @@ textarea {
 }
 
 .service-text {
+    padding-bottom: 10px;
     width: 50%;
     height: 100%;
 }
@@ -546,8 +547,10 @@ textarea {
 }
 
 .service-image {
-    width: 50%;
-    height: 100%;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .container {
@@ -593,7 +596,7 @@ textarea {
 
     .service-text {
         width: 100%;
-        height: 50%;
+        height: fit-content;
     }
     .service-image {
         width: 100%;
