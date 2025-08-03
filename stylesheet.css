@@ -395,7 +395,7 @@ li > a:hover {
 
 
 .contact-us-button {
-    margin-bottom: 1vw;
+    margin-bottom: 40px;
     display: flex;
     background-color: #BA3940;
     border-radius: 900px;
@@ -529,6 +529,7 @@ textarea {
 }
 
 .service-row {
+    margin-top: 20px;
     display: flex;
     width: 1200px;
     height: 500px;
@@ -578,7 +579,6 @@ textarea {
     .service-image {
         width: 50%;
         height: 100%;
-        height: 50vw;
     }
 
     .service-text {
