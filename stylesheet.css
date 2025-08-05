@@ -162,11 +162,24 @@ li > a:hover {
 
 #about-us-subtext {
     font-size: 20px;
+    width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 500%);
 }
+
+#about-us-subtext-small {
+    display: none;
+    font-size: 20px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translate(-35%, 500%);
+    justify-content: center;
+}
+
 
 #about-us-photo {
     filter: brightness(70%);
@@ -306,16 +319,15 @@ li > a:hover {
 }
 
 
-@media (max-width: 675px) {
+@media (max-width: 890px) {
     #about-us-subtext {
-        transform: translate(-50%, 200%);
+        display: none;
+    }
+    #about-us-subtext-small {
+        display: flex;
     }
 }
-@media (max-width: 500px) {
-    #about-us-subtext {
-        transform: translate(-50%, 280%);
-    }
-}
+
 
 @media (max-width: 960px) {
     #services-div {
