@@ -142,10 +142,13 @@ li > a:hover {
 
 #image-container {
     display: flex;
+    flex-direction: column;
     align-self: center;
     position: relative;
     text-align: center;
     color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 #about-us-text {
@@ -154,7 +157,15 @@ li > a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
+}
+
+#about-us-subtext {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 500%);
 }
 
 #about-us-photo {
@@ -292,6 +303,18 @@ li > a:hover {
 
 .learn-more > h3 {
     font-size: 15px;
+}
+
+
+@media (max-width: 675px) {
+    #about-us-subtext {
+        transform: translate(-50%, 200%);
+    }
+}
+@media (max-width: 500px) {
+    #about-us-subtext {
+        transform: translate(-50%, 280%);
+    }
 }
 
 @media (max-width: 960px) {
