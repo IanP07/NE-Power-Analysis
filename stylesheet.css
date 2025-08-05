@@ -200,7 +200,7 @@ li > a:hover {
     padding-top: 2vw;
     display: flex;
     justify-content: center;
-    font-size: 44px;
+    font-size: 38px;
 }
 
 
@@ -383,7 +383,7 @@ li > a:hover {
     display: flex;
     justify-content: center;
     padding-top: 2vw;
-    font-size: 44px;
+    font-size: 38px;
 }
 
 #portfolio-list {
@@ -442,7 +442,7 @@ li > a:hover {
     display: flex;
     justify-content: center;
     padding-top: 2vw;
-    font-size: 40px;
+    font-size: 38px;
 }
 
 .contact-us-text {
