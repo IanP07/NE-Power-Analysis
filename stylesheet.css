@@ -246,7 +246,7 @@ li > a:hover {
     background-color: #f5f5f7;
     height: fit-content;  /* 27vw */
     min-height: 545px;
-    width: 400px;
+    width: 420px;
     border-radius: 13px;
     transform: scale(1);
     transition: transform 0.3s;
