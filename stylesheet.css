@@ -232,6 +232,7 @@ li > a:hover {
     grid-template-columns: auto auto;
     justify-content: center;
     justify-self: center;
+    align-items: center;
 }
 
 
@@ -338,6 +339,7 @@ li > a:hover {
     #services-div {
         grid-template-columns: 1fr;
         justify-items: center;
+        align-items: center;
     }
     #services-div > a > div {
         min-height: 100vw;
