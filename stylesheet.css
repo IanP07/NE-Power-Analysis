@@ -225,7 +225,7 @@ li > a:hover {
 #services-div {
     height: auto;
     width: 100%;
-    padding: 2vw;
+/*     padding: 2vw; */
     padding-top: 1vw;
     display: grid;
     gap: 2vw;
