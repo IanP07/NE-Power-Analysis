@@ -357,6 +357,7 @@ li > a:hover {
     }
 
     .learn-more {
+        margin-top: 20px;
         margin-bottom: 2vw;
         height: 7.69vw;
         width: 20vw;
@@ -383,7 +384,7 @@ li > a:hover {
 }
 
 
-@media (max-width: 500px) { 
+@media (max-width: 600px) { 
     .learn-more > h3{
         font-size: 3.3vw;
     }
@@ -437,7 +438,8 @@ li > a:hover {
 
 
 .contact-us-button {
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
     display: flex;
     background-color: #BA3940;
     border-radius: 900px;
@@ -592,10 +594,8 @@ textarea {
 }
 
 .service-image {
-    width:100%;
+    width:60%;
     height:100%;
-    object-fit: cover;
-    overflow: hidden;
 }
 
 .container {
@@ -612,13 +612,13 @@ textarea {
     font-size: 18px;
 }
 
-@media (max-width: 1250px) { 
+@media (max-width: 1300px) { 
     #main-service-content {
         width: 90%;
     }
     .service-row {
         width: 100%;
-        height: px;
+        height: fit-content;
     }
     .service-image {
         width: 50%;
@@ -631,7 +631,7 @@ textarea {
 
 } 
 
-@media (max-width: 800px) { 
+@media (max-width: 850px) { 
     .service-row {
         flex-direction: column;
         width: 100%;
