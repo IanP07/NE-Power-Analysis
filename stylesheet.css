@@ -427,6 +427,47 @@ li > a:hover {
     align-items: center;
 }
 
+#portfolio-bubble-container {
+    width: min(85vw, 1500px);
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(344px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.portfolio-bubble-item {
+    justify-content: space-between;
+    display: flex;
+    border-radius: 26px;
+    height: 90px;
+    background-color: #F5F5F7;
+    border: 1px solid rgba(150, 150, 150, 0.56);
+}
+
+.portfolio-bubble-item > div > h1 {
+    font-size: 17px;
+    margin-left: 30px;
+    margin-top: 24px;
+}
+
+.portfolio-bubble-item > div > h2 {
+    margin-left: 30px;
+    line-height: 0.4;
+    font-size: 15px;
+    margin-top: 0px;
+    color: #4f4f4f;
+}
+
+#tester {
+    margin-right: 20px;
+    margin-top: 30px;
+    background-color: red;
+    height: 40px;
+    width: 80px;
+}
+
 #portfolio-bubble {
     background-color: #f5f5f7;
     padding: 10px;
