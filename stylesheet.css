@@ -428,7 +428,7 @@ li > a:hover {
 }
 
 #portfolio-bubble-container {
-    width: min(85vw, 1500px);
+    width: min(85vw, 1400px);
     justify-self: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(344px, 1fr));
