@@ -538,7 +538,7 @@ li > a:hover {
 #contact-body > #form-body > #contact-form > div {
     display: flex;
     flex-direction: column;
-    margin: 1vw;
+    margin: .75vw;
 }
 
 label { 
