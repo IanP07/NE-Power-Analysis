@@ -620,7 +620,7 @@ textarea {
     display: flex;
     width: 1200px;
     height: 500px;
-    gap: 1vw;
+    gap: 2vw;
 }
 
 .service-text {
