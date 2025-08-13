@@ -460,11 +460,13 @@ li > a:hover {
     color: #4f4f4f;
 }
 
-#tester {
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     margin-right: 20px;
-    margin-top: 24px;
-    background-color: red;
-    height: 40px;
+    background-color: rgba(218, 81, 81, 0.349);
+    height: 100%;
     width: 80px;
 }
 
