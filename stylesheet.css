@@ -629,7 +629,7 @@ textarea {
     margin-top: 40px;
     display: flex;
     width: 1200px;
-    height: 500px;
+    height: fit-content;
     gap: 2vw;
 }
 
