@@ -446,17 +446,24 @@ li > a:hover {
     border: 1px solid rgba(150, 150, 150, 0.56);
 }
 
+.portfolio-bubble-item > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .portfolio-bubble-item > div > h1 {
     font-size: 17px;
     margin-left: 30px;
-    margin-top: 24px;
     margin-bottom: 4.5px;
+    margin-top: 0px;
 }
 
 .portfolio-bubble-item > div > h2 {
     margin-left: 30px;
     line-height: 1;
     font-size: 15px;
+    margin-bottom: 0px;
     margin-top: 0px;
     color: #4f4f4f;
 }
@@ -466,7 +473,7 @@ li > a:hover {
     align-items: center;
     justify-content: flex-end;
     margin-right: 20px;
-    background-color: rgba(218, 81, 81, 0.349);
+    margin-left: 15px;
     height: 100%;
     width: 80px;
 }
