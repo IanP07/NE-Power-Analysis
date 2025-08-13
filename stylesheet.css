@@ -138,11 +138,12 @@ li > a:hover {
     padding-top: 2.5vw;
     padding-right: 13vw;
     align-self: center;
-    align-items: first baseline;
+    align-items: center;
 }
 
 #about-us > h2 {
     font-size: 18px;
+    max-width: 1200px;
 }
 
 #image-container {
@@ -365,9 +366,6 @@ li > a:hover {
     #about-us {
         padding-left: 10vw;
         padding-right: 10vw;
-    }
-    #about-us-photo {
-        margin-top: 10vw;
     }
     #about-us-text {
         font-size: 30px;
