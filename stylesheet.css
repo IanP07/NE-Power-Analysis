@@ -441,7 +441,7 @@ li > a:hover {
     border-radius: 13px;
     height: 90px;
     background-color: #F5F5F7;
-    border: 1px solid rgba(150, 150, 150, 0.56);
+    /*border: 1px solid rgba(150, 150, 150, 0.56);*/
 }
 
 .portfolio-bubble-item > div {
