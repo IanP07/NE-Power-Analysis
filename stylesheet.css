@@ -438,7 +438,7 @@ li > a:hover {
 .portfolio-bubble-item {
     justify-content: space-between;
     display: flex;
-    border-radius: 26px;
+    border-radius: 13px;
     height: 90px;
     background-color: #F5F5F7;
     border: 1px solid rgba(150, 150, 150, 0.56);
