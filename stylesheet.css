@@ -312,7 +312,7 @@ li > a:hover {
     margin-top: auto; /* Pushes card to bottom*/
     margin-bottom: 0vw;
     display: flex;
-    background-color: #BA3940;
+    background-color: #a6212f;
     border-radius: 900px;
     height: 50px;
     width: 150px;
@@ -490,7 +490,7 @@ li > a:hover {
     margin-top: 40px;
     margin-bottom: 10px;
     display: flex;
-    background-color: #BA3940;
+    background-color: #a6212f;
     border-radius: 900px;
     height: 50px;
     width: 150px;
@@ -555,7 +555,7 @@ input {
 }
 
 input[type=submit] {
-    background-color:  #BA3940;
+    background-color:  #a6212f;
     border-radius: 200px;
     height: 50px;
     width: 150px;
