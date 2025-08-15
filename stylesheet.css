@@ -208,7 +208,7 @@ li > a:hover {
 .active-nav {
     text-decoration: underline;
     text-underline-offset: 6px; /* optional: space between text and underline */
-    color: #BA3940;
+    color: #a6212f;
 }
 
 
