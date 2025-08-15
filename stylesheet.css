@@ -548,8 +548,8 @@ label {
 }
 
 input {
-    border-radius: 8px;
-    border-color: rgb(180, 174, 174);
+    border-radius: 16px;
+    border-color: rgb(129, 129, 129);
     border-style: solid;
     border-width: 2px;
 }
@@ -584,8 +584,8 @@ input[type=text] {
 }
 
 textarea {
-    border-radius: 8px;
-    border-color: rgb(180, 174, 174);
+    border-radius: 16px;
+    border-color: rgb(129, 129, 129);
     border-style: solid;
     border-width: 2px;
     padding: 8px;
