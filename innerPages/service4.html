@@ -68,8 +68,8 @@
                         The updated power distribution one-line diagram will be included in the final analysis.
                     </h1>
                 </div>
-                <div class="service-image">
-                    <img src="../images/one-line3.png" style="border-radius: 13px; width:100%;
+                <div id="one-line-diagram-div" class="service-image">
+                    <img id="one-line-diagram-image" src="../images/one-line3.png" style="border-radius: 13px; width:100%;
                     height:auto;">
                 </div>
             </div>
@@ -90,6 +90,60 @@
             hamburgerNavbar.classList.remove("opened");
         }
     })
+</script>
+<script>
+    const square = document.getElementById("one-line-diagram-div");
+    const image = document.getElementById("one-line-diagram-image");
+
+    square.addEventListener("click", (event) => {
+        event.stopPropagation();
+        resize();
+    });
+    toggled = false; 
+
+    function resize() {
+        console.log("hello");
+        if(toggled) { /* Resets image div */ 
+            console.log("one");
+            square.style.width = "";
+            square.style.position = "static";
+            square.style['align-items'] = "";
+            square.style.transform = "";
+            toggled = false;
+            image.style['border'] = ""; 
+        }
+        else if(window.innerWidth > 850) {
+            console.log("two");
+            square.style.display = "flex";
+            square.style['align-items'] = "center";
+            square.style.width = "min(1100px, 90vw)";
+            square.style.position = "fixed";
+            square.style.top = "50%";
+            square.style.left = "50%";
+            square.style.transform = "translate(-50%, -50%)";
+            square.style["z-index"] = "9";
+            toggled = true;
+            image.style['border'] = "2px solid black"; 
+        }
+    }
+    window.addEventListener("click", (event) => {
+        if(event.target !== square) {
+            checkForShrink();
+        }
+    });
+
+
+    function checkForShrink() {
+        if(toggled) {
+            console.log("three");
+            square.style.width = "";
+            square.style.position = "static";
+            square.style.transform = "";
+            square.style['align-items'] = "";
+            toggled = false;
+            image.style['border'] = ""; 
+        }
+    }
 </script>
 
 </html>

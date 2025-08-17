@@ -327,6 +327,9 @@ li > a:hover {
 }
 
 
+
+
+
 @media (max-width: 890px) {
     #about-us-subtext {
         display: none;
@@ -661,6 +664,18 @@ textarea {
 .service-text-body {
     font-size: 18px;
 }
+
+/* OPTIONAL, APPLY ONLY TO IMAGES THAT WILL GROW IN SIZE WHEN CLICKED */
+#one-line-diagram-image {
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+
+#one-line-diagram-image:hover {
+    transform: scale(1.03);
+}
+ 
+
 
 @media (max-width: 1300px) { 
     #main-service-content {
