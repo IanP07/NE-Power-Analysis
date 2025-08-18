@@ -103,7 +103,7 @@ li > a:hover {
 }
 
 #navbar-picture {
-    width: min(60vw, 600px); 
+    width: min(60vw, 400px); 
     height: auto;
 }
 
