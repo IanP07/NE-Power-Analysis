@@ -666,12 +666,12 @@ textarea {
 }
 
 /* OPTIONAL, APPLY ONLY TO IMAGES THAT WILL GROW IN SIZE WHEN CLICKED */
-#one-line-diagram-image {
+#EE2-image {
     transform: scale(1);
     transition: transform 0.4s ease;
 }
 
-#one-line-diagram-image:hover {
+#EE2-image:hover {
     transform: scale(1.03);
 }
  
