@@ -50,8 +50,8 @@
                        
                     </h1>
                 </div>
-                <div class="service-image">
-                    <img src="../images/EE1.png" style="border-radius: 13px; width:100%;
+                <div id="EE1-div" class="service-image">
+                    <img id="EE1-image" src="../images/EE1.png" style="border-radius: 13px; width:100%;
                     height:auto;">
                 </div>
             </div>
@@ -92,56 +92,112 @@
     })
 </script>
 <script>
-    const square = document.getElementById("EE2-div");
-    const image = document.getElementById("EE2-image");
+    const squareEE1 = document.getElementById("EE1-div");
+    const imageEE1 = document.getElementById("EE1-image");
 
-    square.addEventListener("click", (event) => {
+    squareEE1.addEventListener("click", (event) => {
         event.stopPropagation();
-        resize();
+        resize1();
     });
-    toggled = false; 
+    toggled1 = false; 
 
-    function resize() {
+    function resize1() {
         console.log("hello");
-        if(toggled) { /* Resets image div */ 
-            console.log("one");
-            square.style.width = "";
-            square.style.position = "static";
-            square.style['align-items'] = "";
-            square.style.transform = "";
-            toggled = false;
-            image.style['border'] = ""; 
+        if(toggled1) { /* Resets image div */ 
+            console.log("ee1");
+            squareEE1.style.width = "";
+            squareEE1.style.position = "static";
+            squareEE1.style['align-items'] = "";
+            squareEE1.style.transform = "";
+            toggled1 = false;
+            imageEE1.style['border'] = ""; 
         }
         else if(window.innerWidth > 850) {
-            console.log("two");
-            square.style.display = "flex";
-            square.style['align-items'] = "center";
-            square.style.width = "min(1100px, 90vw)";
-            square.style.position = "fixed";
-            square.style.top = "50%";
-            square.style.left = "50%";
-            square.style.transform = "translate(-50%, -50%)";
-            square.style["z-index"] = "9";
-            toggled = true;
-            image.style['border'] = "1px solid black"; 
+            console.log("ee2");
+            squareEE1.style.display = "flex";
+            squareEE1.style['align-items'] = "center";
+            squareEE1.style.width = "min(1100px, 90vw)";
+            squareEE1.style.position = "fixed";
+            squareEE1.style.top = "50%";
+            squareEE1.style.left = "50%";
+            squareEE1.style.transform = "translate(-50%, -50%)";
+            squareEE1.style["z-index"] = "9";
+            toggled1 = true;
+            imageEE1.style['border'] = "1px solid black"; 
         }
     }
     window.addEventListener("click", (event) => {
-        if(event.target !== square) {
-            checkForShrink();
+        if(event.target !== squareEE1) {
+            checkForShrink1();
         }
     });
 
 
-    function checkForShrink() {
-        if(toggled) {
+    function checkForShrink1() {
+        if(toggled1) {
             console.log("three");
-            square.style.width = "";
-            square.style.position = "static";
-            square.style.transform = "";
-            square.style['align-items'] = "";
-            toggled = false;
-            image.style['border'] = ""; 
+            squareEE1.style.width = "";
+            squareEE1.style.position = "static";
+            squareEE1.style.transform = "";
+            squareEE1.style['align-items'] = "";
+            toggled1 = false;
+            imageEE1.style['border'] = ""; 
+        }
+    }
+</script>
+<script>
+    const squareEE2 = document.getElementById("EE2-div");
+    const imageEE2 = document.getElementById("EE2-image");
+
+    squareEE2.addEventListener("click", (event) => {
+        event.stopPropagation();
+        resize2();
+    });
+    toggled2 = false; 
+
+    function resize2() {
+        console.log("hello");
+        if(toggled2) { /* Resets image div */ 
+            console.log("one");
+            squareEE2.style.width = "";
+            squareEE2.style.position = "static";
+            squareEE2.style['align-items'] = "";
+            squareEE2.style.transform = "";
+            toggled2 = false;
+            imageEE2.style['border'] = ""; 
+            squareEE2.style["z-index"] = "";
+        }
+        else if(window.innerWidth > 850) {
+            console.log("two");
+            squareEE2.style.display = "flex";
+            squareEE2.style['align-items'] = "center";
+            squareEE2.style.width = "min(1100px, 90vw)";
+            squareEE2.style.position = "fixed";
+            squareEE2.style.top = "50%";
+            squareEE2.style.left = "50%";
+            squareEE2.style.transform = "translate(-50%, -50%)";
+            squareEE2.style["z-index"] = "9";
+            toggled2 = true;
+            imageEE2.style['border'] = "1px solid black"; 
+        }
+    }
+    window.addEventListener("click", (event) => {
+        if(event.target !== squareEE2) {
+            checkForShrink2();
+        }
+    });
+
+
+    function checkForShrink2() {
+        if(toggled2) {
+            console.log("three");
+            squareEE2.style.width = "";
+            squareEE2.style.position = "static";
+            squareEE2.style.transform = "";
+            squareEE2.style['align-items'] = "";
+            toggled2 = false;
+            imageEE2.style['border'] = ""; 
+            squareEE2.style["z-index"] = "";
         }
     }
 </script>
