@@ -684,7 +684,14 @@ textarea {
     transform: scale(1.03);
 }
  
+#AF2-image {
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
 
+#AF2-image:hover {
+    transform: scale(1.03);
+}
 
 @media (max-width: 1300px) { 
     #main-service-content {

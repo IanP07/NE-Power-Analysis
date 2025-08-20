@@ -69,8 +69,8 @@
                         the final analysis. The report provides arc flash hazard labels that can be printed and applied to the equipment in the field.
                     </h1>
                 </div>
-                <div class="service-image">
-                    <img src="../images/AF2.png" style="border-radius: 13px; width:100%;
+                 <div id="AF2-div" class="service-image">
+                    <img id="AF2-image" src="../images/AF2.png" style="border-radius: 13px; width:100%;
                     height:auto;">
                 </div>
             </div>
@@ -93,5 +93,60 @@
         }
     })
 </script>
+<script>
+    const squareAF2 = document.getElementById("AF2-div");
+    const imageAF2 = document.getElementById("AF2-image");
 
+    squareAF2.addEventListener("click", (event) => {
+        event.stopPropagation();
+        resize2();
+    });
+    toggled2 = false; 
+
+    function resize2() {
+        console.log("hello");
+        if(toggled2) { /* Resets image div */ 
+            console.log("one");
+            squareAF2.style.width = "";
+            squareAF2.style.position = "static";
+            squareAF2.style['align-items'] = "";
+            squareAF2.style.transform = "";
+            toggled2 = false;
+            imageAF2.style['border'] = ""; 
+            squareAF2.style["z-index"] = "";
+        }
+        else if(window.innerWidth > 850) {
+            console.log("two");
+            squareAF2.style.display = "flex";
+            squareAF2.style['align-items'] = "center";
+            squareAF2.style.width = "min(1100px, 90vw)";
+            squareAF2.style.position = "fixed";
+            squareAF2.style.top = "50%";
+            squareAF2.style.left = "50%";
+            squareAF2.style.transform = "translate(-50%, -50%)";
+            squareAF2.style["z-index"] = "9";
+            toggled2 = true;
+            imageAF2.style['border'] = "1px solid black"; 
+        }
+    }
+    window.addEventListener("click", (event) => {
+        if(event.target !== squareAF2) {
+            checkForShrink2();
+        }
+    });
+
+
+    function checkForShrink2() {
+        if(toggled2) {
+            console.log("three");
+            squareAF2.style.width = "";
+            squareAF2.style.position = "static";
+            squareAF2.style.transform = "";
+            squareAF2.style['align-items'] = "";
+            toggled2 = false;
+            imageAF2.style['border'] = ""; 
+            squareAF2.style["z-index"] = "";
+        }
+    }
+</script>
 </html>
