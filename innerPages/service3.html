@@ -53,8 +53,8 @@
                         
                     </h1>
                 </div>
-                <div class="service-image">
-                    <img src="../images/PDC1.png" style="border-radius: 13px; width:100%;
+                <div id="PDC1-div" class="service-image">
+                    <img id="PDC1-image" src="../images/PDC1.png" style="border-radius: 13px; width:100%;
                     height:auto;">
                    
                 </div>
@@ -101,5 +101,58 @@
         }
     })
 </script>
+<script>
+    const squarePDC1 = document.getElementById("PDC1-div");
+    const imagePDC1 = document.getElementById("PDC1-image");
 
+    squarePDC1.addEventListener("click", (event) => {
+        event.stopPropagation();
+        resize1();
+    });
+    toggled1 = false; 
+
+    function resize1() {
+        console.log("hello");
+        if(toggled1) { /* Resets image div */ 
+            console.log("PDC1");
+            squarePDC1.style.width = "";
+            squarePDC1.style.position = "static";
+            squarePDC1.style['align-items'] = "";
+            squarePDC1.style.transform = "";
+            toggled1 = false;
+            imagePDC1.style['border'] = ""; 
+        }
+        else if(window.innerWidth > 850) {
+            console.log("ee2");
+            squarePDC1.style.display = "flex";
+            squarePDC1.style['align-items'] = "center";
+            squarePDC1.style.width = "min(1100px, 90vw)";
+            squarePDC1.style.position = "fixed";
+            squarePDC1.style.top = "50%";
+            squarePDC1.style.left = "50%";
+            squarePDC1.style.transform = "translate(-50%, -50%)";
+            squarePDC1.style["z-index"] = "9";
+            toggled1 = true;
+            imagePDC1.style['border'] = "1px solid black"; 
+        }
+    }
+    window.addEventListener("click", (event) => {
+        if(event.target !== squarePDC1) {
+            checkForShrink1();
+        }
+    });
+
+
+    function checkForShrink1() {
+        if(toggled1) {
+            console.log("three");
+            squarePDC1.style.width = "";
+            squarePDC1.style.position = "static";
+            squarePDC1.style.transform = "";
+            squarePDC1.style['align-items'] = "";
+            toggled1 = false;
+            imagePDC1.style['border'] = ""; 
+        }
+    }
+</script>
 </html>

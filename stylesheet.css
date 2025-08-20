@@ -666,6 +666,15 @@ textarea {
 }
 
 /* OPTIONAL, APPLY ONLY TO IMAGES THAT WILL GROW IN SIZE WHEN CLICKED */
+#PDC1-image {
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+
+#PDC1-image:hover {
+    transform: scale(1.03);
+}
+
 #EE1-image {
     transform: scale(1);
     transition: transform 0.4s ease;
